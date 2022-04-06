@@ -2,5 +2,5 @@
 
 This is a repo for DataCrew-Algorithm.
 
-I mainly pull BOJ codes with Python.
+I mainly push BOJ codes with Python.
 
