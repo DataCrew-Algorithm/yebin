@@ -17,7 +17,7 @@ for i in icecream:
     for j in ban:
         if len(set(i) & set(j)) == 2: #i 와 j 겹치는 부분(섞으면 안되는 조합) 유무 확인 
             pass
-        if len(set(i) & set(j)) == 0:
+        if len(set(i) & set(j)) != 2:
             com += 1
 print(com)
 
