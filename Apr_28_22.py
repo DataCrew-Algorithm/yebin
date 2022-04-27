@@ -12,7 +12,7 @@ for i in range(n):
         g.append(score[j]- score[j+1])
     print('Class '+ str(i+1))
     print('Max '+ str(score[0]) +', Min ' + str(score[-1]) + ', Largest gap ' + str(max(g)))
-    g.clear()
+    g.clear() #append 해놓은 리스트 비워놓기 -> 그래야 재사용가능
 
 #출력 문구 space 주의!!!
 # print('a'+'b') ->  ab
