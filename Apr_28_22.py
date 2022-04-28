@@ -2,7 +2,6 @@
 #성적 통계
 import sys
 n = int(sys.stdin.readline())
-l = [] #list
 g = [] #gaps
 for i in range(n):
     data = list(map(int,(sys.stdin.readline().split())))
