@@ -1,3 +1,5 @@
+#BOJ 2161
+#카드게임1
 '''
 N장의 카드가 있다. 각각의 카드는 차례로 1부터 N까지의 번호가 붙어 있으며,
 1번 카드가 제일 위에, N번 카드가 제일 아래인 상태로 순서대로 카드가 놓여 있다.
@@ -18,11 +20,7 @@ card.reverse()
 floor = []
 
 for i in range(N):
-    if len(card) == 1: #1장 밖에 없으면 그냥 출력
-        pass
-    else:
+    if len(card) != 1: #1장 밖에 없으면 그냥 출력
         floor.append(card.pop())
         card.insert(0,card.pop())
-        if len(card) == 1:
-            break
 print(*floor,*card)
