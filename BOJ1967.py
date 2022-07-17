@@ -71,6 +71,7 @@ bfs(1)
 
 
 # #블로그 참고
+# #https://velog.io/@bae_mung/Python-BOJ-1967-트리의-지름-2
 # import sys
 # from collections import deque
 # input = sys.stdin.readline
