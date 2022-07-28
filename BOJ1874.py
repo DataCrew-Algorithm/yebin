@@ -46,18 +46,20 @@ j = 1
 for _ in range(n):
     org = int(read())
     original.append(org) #[4, 3, 6, 8, 7, 5, 2, 1]
-    if j <= org:
+    while j <= org: #j== org 일 때까지 돌아라~
         nums1.append(j)
         pm.append('+')
         j += 1
     if nums1[-1] == org:
         nums2.append(nums1.pop())
         pm.append('-')
-    else:
-        print('NO')
 
-
-# #블로그 풀이 // 내거랑 비슷한데 while문, flag 사용 이유 모르겠어요
+if nums2 == original:
+    print(*pm)
+else:
+    print('NO')
+    
+# #블로그 풀이 // 내거랑 비슷한데 flag 사용 이유 모르겠어요
 # n = int(input())
 # stack = []
 # answer = []
